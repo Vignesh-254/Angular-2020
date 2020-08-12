@@ -1,0 +1,10 @@
+.student-list{
+    display: flex;
+    margin: 10px 0px;
+    padding: 12px 15px;
+    width: 100%;
+    cursor: pointer;
+    &:hover{
+        background-color: grey;
+    }
+}
