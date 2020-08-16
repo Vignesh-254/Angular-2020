@@ -1,0 +1,39 @@
+<!-- <p>{{value}}</p> -->
+
+    <div class="card">
+        <h4 class="card-heading">Student Details</h4>
+        <div class="row student-card">
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Student Name</h5>
+                <p class="left-content right-content">{{studentValue.name || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Fees</h5>
+                <p class="left-content right-content">{{studentValue['fees'] || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Class</h5>
+                <p class="left-content right-content">{{studentValue.class || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Due Date</h5>
+                <p class="left-content right-content">{{studentValue.dueDate || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Division</h5>
+                <p class="left-content right-content">{{studentValue.grade || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Contact No</h5>
+                <p class="left-content right-content">{{studentValue.contact || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Rank</h5>
+                <p class="left-content right-content">{{studentValue.rank || errorMessage}}</p>
+            </div>
+            <div class="col-md-6 card-field">
+                <h5 class="left-content">Address</h5>
+                <address class="left-content right-content">{{studentValue.address || errorMessage}}</address>
+            </div>
+    </div>
+

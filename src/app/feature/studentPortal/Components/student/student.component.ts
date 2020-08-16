@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentDetails } from '../shared/modal';
-import { School } from '../shared/data.modal'
+import { StudentDetails } from '../../../../shared/modal';
+import { School } from '../../../../shared/data.modal';
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',

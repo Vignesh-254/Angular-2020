@@ -1,0 +1,33 @@
+.card{
+    box-shadow: 1px 1px 6px #2E9CCA;
+    opacity: 1;
+    padding: 0 15px;
+    .card-heading{
+        text-align:center;
+        color: #25274D;
+        font: Bold 32px/40px Helvetica Neue;
+    }
+    .student-card{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card-field{
+            display: flex;
+            justify-content: space-between;
+            .left-content{
+                width: 50%;
+                padding: 10px 0px;
+                color: #000000;
+                font: Bold 16px/29px Helvetica Neue;
+            }
+            .right-content{
+                color: #464866;
+                font: Regular 16px/29px Helvetica Neue;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+

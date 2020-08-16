@@ -1,8 +1,10 @@
-<div class="container">
-  <div class="row">
+<app-student-header></app-student-header>
+  <div class="container" [ngStyle]= "{'margin-top': '30px' }">
+    <div class="row">
       <div class="col-md-12">
-        <h3>Student List</h3>
-        <app-student></app-student>
-       </div>
+        <!-- <app-student></app-student> -->
+        <app-student-list (person) = "studentDetails($event)"></app-student-list>
+        <app-student-card *ngIf = "data" [studentValue]="data"></app-student-card>
+      </div>
+    </div>
   </div>
-</div> 

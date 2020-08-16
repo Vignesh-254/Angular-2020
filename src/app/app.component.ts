@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  
   title = 'Training';
+ 
+  data
+  ngOnInit(): void {
+  }
+
+  studentDetails(value){
+    this.data = value
+    console.log('app'+typeof(value))
+  }
 }
