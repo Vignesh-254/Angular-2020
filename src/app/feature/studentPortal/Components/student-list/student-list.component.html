@@ -10,23 +10,23 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngIf = !school.students.length>
+            <tr *ngIf = !details.length>
                 <td colspan="4">
                     No Records Found!!!
                 </td>
 
             </tr>
-            <tr *ngFor = "let student of school.students;let k = index" 
+            <tr *ngFor = "let student of details;let k = index" 
             [ngStyle] = 
             "{'backgroundColor' : k%2==0 ? 'lightgrey' : 'white'}"
             class="table-records">
-                <td>{{student.name || errorMessage}} </td>
-                <td>{{student.regno || errorMessage}}</td>
-                <td>{{student.class || errorMessage}}</td>
-                <td>{{student.grade || errorMessage}}</td>
+                <td>{{student.Name || errorMessage}} </td>
+                <td>{{student.RegestrationNo || errorMessage}}</td>
+                <td>{{student.Class || errorMessage}}</td>
+                <td>{{student.Division || errorMessage}}</td>
                 <td>
                     <button class="image-wrapper" (click) = "studentDetails(student)">
-                        <img src="../../../assets/icons8-next-page-64.png">
+                        <img src="../../../assets/icons/icons8-next-page-64.png">
                     </button>
                 </td>
             </tr>

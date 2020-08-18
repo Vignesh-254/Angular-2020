@@ -1,6 +1,8 @@
 .student-heading{
     background-color: #000000;
     .student-wrapper{
+        max-width: 1076px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding: 14px 20px;

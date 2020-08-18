@@ -26,6 +26,10 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                max-height: calc(16px * 2);
+                overflow: hidden;
+                padding-right: 12px;
+                position: relative;
             }
         }
     }

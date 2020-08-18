@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
 import { StudentPortalModule } from './feature/studentPortal/Components/studentPortal.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StudentPortalModule } from './feature/studentPortal/Components/studentP
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    StudentPortalModule
+    StudentPortalModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
