@@ -1,39 +1,42 @@
 <!-- <p>{{value}}</p> -->
-
+    <button class="btn btn-white back-btn" (click)="backtoHome()">
+        <img src="../../../../../assets/icons/icons8-chevron-left-24.png">
+        back
+    </button>
     <div class="card">
         <h4 class="card-heading">Student Details</h4>
         <div class="row student-card">
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Student Name</h5>
-                <span class="left-content right-content">{{studentValue.Name || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue.Name || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Fees</h5>
-                <span class="left-content right-content">{{studentValue['Fee'] || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue['Fee'] || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Class</h5>
-                <span class="left-content right-content">{{studentValue.Class || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue.Class || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Due Date</h5>
-                <span class="left-content right-content">{{studentValue.DueDate || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue.DueDate || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Division</h5>
-                <span class="left-content right-content">{{studentValue.Division || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue.Division || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Contact No</h5>
-                <span class="left-content right-content">{{studentValue.ContactNo || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue.ContactNo || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Rank</h5>
-                <span class="left-content right-content">{{studentValue.Rank || errorMessage}}</span>
+                <p class="left-content right-content">{{studentValue.Rank || errorMessage}}</p>
             </div>
             <div class="col-md-6 card-field">
                 <h5 class="left-content">Address</h5>
-                <address class="left-content right-content">{{studentValue.Address || errorMessage}}</address>
+                <address class="left-content right-content address">{{studentValue.Address || errorMessage}}</address>
             </div>
     </div>
 

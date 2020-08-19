@@ -1,11 +1,12 @@
 <app-student-header></app-student-header>
 <main class="main-container">
-  <div class="container" [ngStyle]= "{'padding-top': '30px' }">
+  <div class="container px-0" [ngStyle]= "{'padding-top': '30px' }">
     <div class="row">
       <div class="col-md-12">
         <!-- <app-student></app-student> -->
-        <app-student-list (person) = "studentDetails($event)"></app-student-list>
-        <app-student-card *ngIf = "data" [studentValue]="data"></app-student-card>
+        <router-outlet></router-outlet>
+        <!-- <app-student-list (person) = "studentDetails($event)"></app-student-list> -->
+        <!-- <app-student-card *ngIf = "data" [studentValue]="data"></app-student-card> -->
       </div>
     </div>
   </div>

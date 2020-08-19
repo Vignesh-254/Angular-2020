@@ -1,5 +1,7 @@
 .student-list{
-    font: Regular 24px/29px Helvetica Neue;
+    // font: Regular 24px/29px Helvetica Neue;
+    font-size: 24px;
+    font-family: Helvetica Neue;
     color: #707070;
     text-align: left;
     background-color: #FFFFFF;
@@ -7,19 +9,19 @@
     th,td{
         vertical-align: middle;
         border: 0;
+        // padding: 18px;
     }
     .table-heading{
         background-color: #000000;
         color: #2E9CCA;
         // border: 1px solid #707070;
-        padding:20px 0px;
+        th{
+            padding: 22px;
+        }
     }
-    .table-records{
-        padding:20px 0px;
-        .grade-image{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    .table-records,.table-records-even{
+        td{
+            padding:17px;
         }
         .image-wrapper{
             border: 0;
@@ -30,7 +32,11 @@
     }
 }
 
-
+.table-records-even{
+    background-color: #f2f2f2;
+    color: #000000;
+    box-shadow: 0 1px 0 #FFFFFF;
+}
 // .table th,.table td{
 //     vertical-align: middle;
 // }

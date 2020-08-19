@@ -1,11 +1,20 @@
+.back-btn{
+    margin: 0;
+    border: 0;
+    background: none;
+    font: Bold 24px/29px Helvetica Neue;
+    color: #FFFFFF;
+}
 .card{
     box-shadow: 1px 1px 6px #2E9CCA;
     opacity: 1;
-    padding: 0 15px;
+    padding: 10px 40px;
+    margin-top: 30px;
     .card-heading{
         text-align:center;
         color: #25274D;
         font: Bold 32px/40px Helvetica Neue;
+        padding-top: 30px;
     }
     .student-card{
         display: flex;
@@ -14,24 +23,43 @@
         .card-field{
             display: flex;
             justify-content: space-between;
+            padding: 10px 20px;
+            font:Bold 24px/29px Helvetica Neue;
             .left-content{
                 width: 50%;
                 padding: 10px 0px;
                 color: #000000;
-                font: Bold 16px/29px Helvetica Neue;
+                font-weight: Bold ;
             }
             .right-content{
                 color: #464866;
-                font: Regular 16px/29px Helvetica Neue;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-height: calc(16px * 2);
-                overflow: hidden;
-                padding-right: 12px;
-                position: relative;
+                font-weight: normal;
             }
         }
     }
 }
 
+.address{
+    --max-lines: 3;
+    position: relative;
+    max-height: calc(23px * 3);
+    overflow: hidden;
+    // text-align: justify;
+    padding-right: 14px !important;
+  }
+  .address:before {
+    position: absolute;
+    content: "...";
+  /*   inset-block-end: 0;
+    inset-inline-end: 0; */
+    bottom: 0;
+    right: 0;
+  }
+  .address:after {
+    content: "";
+    position: absolute;
+  /*   inset-inline-end: 0; */
+    right: 0;
+    width: 16px;
+    height: 16px;
+  }

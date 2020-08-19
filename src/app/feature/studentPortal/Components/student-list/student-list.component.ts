@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { School } from 'src/app/shared/data.modal';
 import { AppdataService } from 'src/app/appdata.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-student-list',
@@ -11,7 +12,7 @@ export class StudentListComponent implements OnInit {
   @Output() person = new EventEmitter();
   errorMessage: string = "NA";
   details:any = [];
-  constructor(public school : School,public appdata: AppdataService) { 
+  constructor(public school : School,public appdata: AppdataService,private router: Router) { 
     
   }
   
@@ -22,6 +23,8 @@ export class StudentListComponent implements OnInit {
   }
 
   studentDetails(event){
-    this.person.emit(event);
+    this.appdata.setStudentDetail(event);
+    this.router.navigate(['student-detail']);
+    // this.person.emit(event);
   }
 }

@@ -15,6 +15,5 @@ export class AppComponent implements OnInit{
 
   studentDetails(value){
     this.data = value
-    console.log('app'+typeof(value))
   }
 }
